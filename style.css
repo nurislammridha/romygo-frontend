@@ -276,6 +276,60 @@ section.py-5 {
   border-radius: 20px;
   height: 466px !important;
 }
+/* Mission Box */
+.romygo-mission-box h4 {
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.chevron.rotate {
+  transform: rotate(180deg);
+}
+
+/* Subtitle Box */
+.mission-subtitle-box {
+  max-height: 285px;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #fffefc;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.mission-subtitle-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .drive-title {
+    font-size: 36px;
+  }
+
+  .drive-image {
+    height: auto !important;
+    max-height: 300px;
+  }
+
+  .mission-subtitle-box {
+    max-height: 300px;
+  }
+}
+
 .drive-image-second{
   border: 1px solid black;
   border-radius: 20px;
@@ -515,8 +569,8 @@ a {
 }
 
 .download-image {
-  width: 100%;
-  height: 180px;
+  width:auto;
+  height: 207px;
   transition: transform 0.3s ease;
 }
 
@@ -546,4 +600,30 @@ a {
     width: auto;
     margin-top: 20px;
   }
+}
+
+/* about section */
+.about-hero {
+  background: none !important;;
+  position: relative;
+  min-height: 100vh;
+  padding-top: 80px;
+  overflow: hidden;
+  color: white;
+}
+
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Shows the full image */
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
 }
