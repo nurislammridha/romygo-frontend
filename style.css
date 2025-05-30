@@ -9,7 +9,7 @@ body {
 
 /* Hero Section with background */
 .hero-section {
-  background: url('bg.jpg') no-repeat center center;
+  background: url('images/bg.jpg') no-repeat center center;
   background-size: cover;
   color: white;
   padding-top: 80px;
@@ -627,3 +627,117 @@ a {
   z-index: 1;
   padding: 20px;
 }
+/* //news */
+.news-head{
+    background: none !important;
+    min-height: 0;
+    background-color: #000 !important;
+    padding: 57px 0 0;
+    margin-bottom: 22px;
+}
+ .news-container {
+      background: #FAF8C9;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-top: 20px;
+    }
+
+   .news-container .featured {
+      height: 100%;
+      object-fit: cover;
+    }
+
+  .news-container  .post-card {
+      background: #FFFEFC;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+
+  .news-container  .post-card:hover {
+      box-shadow: 0 6px 15px rgba(254, 216, 71, 0.6);
+      transform: translateY(-5px);
+    }
+
+  .news-container  .post-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+   .news-container .category {
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+   .news-container .title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+      margin-bottom: 0.2rem;
+    }
+
+  .news-container  .description {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+  .news-container  .btn-theme {
+      border-color: #FED847;
+      color: #000;
+    }
+
+   .news-container .btn-theme:hover {
+      background-color: #FED847;
+      color: #000;
+    }
+
+    /* news details page */
+
+   .news-details .content-container {
+      background-color: #FAF8C9;
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+   .news-details .theme-text {
+      color: #FED847;
+    }
+
+  .news-details  .post-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+    }
+
+  .news-details  h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+  .news-details  .meta {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+  .news-details  .content p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #333;
+    }
+
+  .news-details  .btn-theme {
+      background-color: #FED847;
+      color: #000;
+      border: none;
+    }
+
+  .news-details  .btn-theme:hover {
+      background-color: #e6c432;
+    }
