@@ -120,8 +120,9 @@
                     <div class="romygo-mission-box">
                         <h4 class="mission-toggle fw-bold d-flex align-items-center justify-content-between"
                             onclick="toggleMission()">
-                            The romygo mission.
-                            <span id="chevron" class="chevron">&#9660;</span>
+                            The romygo mission
+                            <!-- <span id="chevron" class="chevron">&#9660;</span> -->
+                            <span id="chevron" class="chevron"><i class="fas fa-chevron-down"></i></span>
                         </h4>
 
                         <div class="mission-subtitle-box collapse mt-3" id="missionText">
@@ -384,6 +385,8 @@
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         function toggleMission() {
+            const chevron = document.getElementById('chevron');
+            chevron.classList.toggle('rotate');
             const box = document.getElementById("missionText");
             box.classList.toggle("show");
         }
