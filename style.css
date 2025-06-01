@@ -742,3 +742,131 @@ a {
   .news-details  .btn-theme:hover {
       background-color: #e6c432;
     }
+/* ========== Cookie Modal ========== */
+.cookie-modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  max-width: 550px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(230, 196, 50, 0.3); /* themed shadow */
+  z-index: 1055;
+  padding: 12px;
+  animation: slideInRight 0.5s ease forwards;
+  transition: all 0.5s ease;
+  border-left: 4px solid #e6c432; /* subtle theme border */
+}
+
+.cookie-modal h5 {
+  font-weight: bold;
+  color: #333;
+}
+
+.cookie-modal p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.cookie-modal label {
+  cursor: pointer;
+  color: #333;
+}
+
+/* ========== Cookie Option Column ========== */
+.cookie-option {
+  font-size: 14px;
+  position: relative;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 6px;
+  padding: 0px 0px;
+}
+
+.cookie-option:hover {
+  background-color: #fef8dc;
+}
+
+.underline {
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  margin-top: 2px;
+}
+
+.underline.active {
+  background-color: #e6c432;
+}
+
+/* ========== Description Column ========== */
+.cookie-desc {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* ========== Buttons ========== */
+.btn-dark {
+  background-color: #e6c432;
+  border-color: #e6c432;
+  color: #000;
+}
+
+.btn-dark:hover {
+  background-color: #d4b522;
+  border-color: #d4b522;
+  color: #000;
+}
+
+.btn-outline-secondary {
+  border-color: #e6c432;
+  color: #e6c432;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #fff7d3;
+  border-color: #e6c432;
+  color: #000;
+}
+
+.btn-light:hover {
+  background-color: #fef8dc;
+  color: #000;
+}
+
+/* ========== Animation ========== */
+.cookie-modal.hide-animation {
+  animation: slideOutLeft 0.5s ease forwards;
+}
+.slide-in {
+  animation: slideInRight 0.5s ease forwards;
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+/* ========== Utility ========== */
+.hidden {
+  display: none;
+}
+
+
+

@@ -275,6 +275,145 @@
     </footer>
 
 
+    <!-- Cookie Modal -->
+    <div id="cookieModal" class="cookie-modal shadow-lg hidden">
+        <div id="cookieStep1">
+            <h5>We use cookies</h5>
+            <p>Click “Accept” to enable RomyGO to use cookies to personalize this site, deliver ads, and measure
+                effectiveness on other apps and websites, including social media. Customize your preferences in your
+                "Cookie settings" or click "Reject" if you do not want to use cookies for this purpose.</p>
+            <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn-light" onclick="showSettings()">Cookie settings</button>
+                <div>
+                    <button class="btn btn-outline-secondary me-2" onclick="handleConsent(false)">Reject</button>
+                    <button class="btn btn-dark" onclick="handleConsent(true)">Accept</button>
+                </div>
+            </div>
+        </div>
+        <div id="cookieStep2" class="hidden">
+            <h5 class="mb-3">We use cookies</h5>
+            <div class="row">
+                <!-- Left column: checkboxes -->
+                <div class="col-5 border-end pe-3">
+                    <div class="cookie-option mb-1 d-flex flex-column" onclick="selectCookieOption('essential')">
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="form-check-input me-2" id="essential" checked disabled>
+                            <label for="essential" class="form-check-label text-nowrap mb-0">Essential</label>
+                        </div>
+                        <div id="underline-essential" class="underline active"></div>
+                    </div>
+
+                    <div class="cookie-option mb-1 d-flex flex-column" onclick="selectCookieOption('ads')">
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="form-check-input me-2" id="ads">
+                            <label for="ads" class="form-check-label text-nowrap mb-0">Targeted advertising</label>
+                        </div>
+                        <div id="underline-ads" class="underline"></div>
+                    </div>
+
+                    <div class="cookie-option d-flex flex-column" onclick="selectCookieOption('analytics')">
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" class="form-check-input me-2" id="analytics">
+                            <label for="analytics" class="form-check-label text-nowrap mb-0">Analytics</label>
+                        </div>
+                        <div id="underline-analytics" class="underline"></div>
+                    </div>
+                </div>
+
+
+                <!-- Right column: description -->
+                <div class="col-7 ps-4">
+                    <div id="desc-essential" class="cookie-desc">
+                        <p>Essential cookies are necessary for features which are essential to your use of our site or
+                            services, such as account login, authentication, and site security.</p>
+                    </div>
+                    <div id="desc-ads" class="cookie-desc d-none">
+                        <p>Targeted advertising cookies allow RomyGO to share your data media companies, to send you
+                            more relevant ads on other apps and websites, and for purposes determined by those partners.
+                        </p>
+                    </div>
+                    <div id="desc-analytics" class="cookie-desc d-none">
+                        <p>Analytics cookies allow RomyGO to analyze your visits and actions on our and third-party apps
+                            and websites to understand you interests and be able to offer you more relevant ads on other
+                            apps and websites.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-light" onclick="hideSettings()">Hide</button>
+                <div>
+                    <button class="btn btn-outline-secondary me-2" onclick="handleConsent(false)">Reject</button>
+                    <button class="btn btn-dark" onclick="savePreferences()">Accept cookies</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function showSettings() {
+            document.getElementById('cookieStep1').classList.add('hidden');
+            document.getElementById('cookieStep2').classList.remove('hidden');
+        }
+
+        function hideSettings() {
+            document.getElementById('cookieStep2').classList.add('hidden');
+            document.getElementById('cookieStep1').classList.remove('hidden');
+        }
+
+        function handleConsent(accepted) {
+            const data = {
+                essential: true,
+                ads: false,
+                analytics: false,
+                accepted: accepted,
+            };
+            localStorage.setItem('cookieConsent', JSON.stringify(data));
+            const modal = document.getElementById('cookieModal');
+            modal.classList.add('hide-animation');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 500); // matches animation duration
+        }
+
+        function savePreferences() {
+            const data = {
+                essential: true,
+                ads: document.getElementById('ads').checked,
+                analytics: document.getElementById('analytics').checked,
+                accepted: true,
+            };
+            localStorage.setItem('cookieConsent', JSON.stringify(data));
+            const modal = document.getElementById('cookieModal');
+            modal.classList.add('hide-animation');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 500); // matches animation duration
+        }
+
+        window.onload = () => {
+            const consent = localStorage.getItem('cookieConsent');
+            const modal = document.getElementById('cookieModal');
+
+            if (!consent) {
+                modal.classList.remove('hidden'); // Show only if no prior consent
+                modal.classList.add('slide-in'); // Optional: trigger animation
+            }
+        };
+
+        function selectCookieOption(type) {
+            // Hide all descriptions
+            document.querySelectorAll('.cookie-desc').forEach(el => el.classList.add('d-none'));
+
+            // Remove all underlines
+            document.querySelectorAll('.underline').forEach(el => el.classList.remove('active'));
+
+            // Show selected description and underline
+            document.getElementById(`desc-${type}`).classList.remove('d-none');
+            document.getElementById(`underline-${type}`).classList.add('active');
+        }
+    </script>
 
 
 
