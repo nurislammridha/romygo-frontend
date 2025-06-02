@@ -23,7 +23,12 @@
 
 <body>
     <!-- Hero Section -->
-    <section class="hero-section news-head">
+    <section class="hero-section about-hero driver-section">
+        <!-- Responsive image background -->
+        <img src="images/driver.jpg" alt="About Background" class="hero-bg-img">
+        <!-- Overlay layer -->
+        <div class="hero-overlay"></div>
+        <!-- Navbar -->
         <header class="navbar navbar-expand-lg fixed-top smart-navbar">
             <div class="container">
                 <div class="d-flex align-items-center gap-3">
@@ -70,42 +75,91 @@
                 </div>
             </div>
         </header>
-    </section>
-
-    <div class="container  news-details">
-        <div class="content-container">
-            <img src="images/about.jpg" class="post-image" alt="Post Image" />
-
-            <h1>Who's driving romygo</h1>
-            <div class="meta">Posted on <strong>May 29</strong> · Category: <span class="theme-text">RomyGO</span>
-            </div>
-
-            <div class="content">
-                <p>
-                    What if chatbots could deliver near-human precision? In this post, we explore how RomyGO's Genie
-                    team
-                    adapted
-                    agentic retrieval-augmented generation (RAG) to build a more intelligent, responsive, and accurate
-                    AI assistant.
-                </p>
-
-                <p>
-                    We break down the system design, how we trained custom retrieval modules, and how it performs in
-                    complex use
-                    cases such as internal knowledge management and automated customer support. Our benchmarks show
-                    marked
-                    improvements in relevance, clarity, and confidence.
-                </p>
-
-                <p>
-                    Continue reading to discover how hybrid models and smart orchestration unlock more powerful chat
-                    experiences.
-                </p>
-
-                <a href="news.html" class="btn btn-theme mt-3">Back to Blog</a>
+        <!-- Optional hero content can go here -->
+        <div class="hero-content text-center">
+            <h1>Make more with <strong class="romyGoText">romygo</strong></h1>
+            <p>romygo drivers make the most amount of money on every ride..</p>
+            <!-- <a href="#" class="btn btn-drive">Apply to drive</a> -->
+            <div class="drive-buttons d-flex flex-wrap align-items-center justify-content-center gap-3">
+                <a href="#" class="btn btn-drive">Apply to drive</a>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="drive-section py-5">
+        <div class="container">
+            <div class="row align-items-center flex-column flex-md-row gap-4 gap-md-0">
+
+                <!-- Image Column -->
+                <div class="col-md-6 text-center">
+                    <img src="images/make.jpg" alt="Drive with RomyGO" class="img-fluid drive-image">
+                </div>
+
+                <!-- Text Column -->
+                <div class="col-md-6 drive-text text-center text-md-start">
+                    <h2 class="drive-title fw-bold mb-3">
+                        You keep what you make</h2>
+                    <p class="drive-description text-muted mb-4">
+                        romygo drivers take home 100% of what they earn. That's the only fair deal and we make it
+                        happen.
+                    </p>
+                    <div class="drive-buttons d-flex flex-wrap align-items-center gap-3">
+                        <a href="#" class="btn btn-drive">Read about romygo pay</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="drive-section drive-section-second py-5">
+        <div class="container">
+            <div class=" align-items-center flex-column flex-md-row gap-4 gap-md-0">
+                <!-- Image Column -->
+                <div class=" text-center">
+                    <img src="images/safety.jpg" alt="Drive with RomyGO" class="img-fluid dirver-image">
+                </div>
+                <!-- Text Column -->
+                <div class="drive-text mt-3">
+                    <h2 class="drive-title fw-bold mb-3">We keep it safe</h2>
+                    <p class="drive-description text-muted mb-3">
+                        romygo is building a community of drivers, riders and corporate to deliver a spectacular
+                        experience for everyone in Romania.
+                    </p>
+                    <div class="drive-buttons d-flex flex-wrap align-items-center gap-3">
+                        <a href="safety" class="btn btn-drive">Read our safety guidelines</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="drive-section py-5">
+        <div class="container">
+            <div class="row align-items-center flex-column flex-md-row gap-4 gap-md-0">
+
+                <!-- Image Column -->
+                <div class="col-md-6 text-center">
+                    <img src="images/apply.jpg" alt="Drive with RomyGO" class="img-fluid drive-image">
+                </div>
+
+                <!-- Text Column -->
+                <div class="col-md-6 drive-text text-center text-md-start">
+                    <h2 class="drive-title fw-bold mb-3">
+                        Make more money today</h2>
+                    <p class="drive-description text-muted mb-4">
+                        Drive with romygo and join our community of happy drivers who take 100% of what they make
+                        everyday.
+                    </p>
+                    <div class="drive-buttons d-flex flex-wrap align-items-center gap-3">
+                        <a href="#" class="btn btn-drive">Apply Here</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //News section -->
+
 
     <footer class="bg-black text-white pb-4 mt-5">
         <div class="container">
@@ -197,6 +251,8 @@
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         function toggleMission() {
+            const chevron = document.getElementById('chevron');
+            chevron.classList.toggle('rotate');
             const box = document.getElementById("missionText");
             box.classList.toggle("show");
         }
