@@ -23,7 +23,12 @@
 
 <body>
     <!-- Hero Section -->
-    <section class="hero-section news-head">
+    <section class="hero-section about-hero driver-section">
+        <!-- Responsive image background -->
+        <img src="images/investor.jpg" alt="About Background" class="hero-bg-img">
+        <!-- Overlay layer -->
+        <div class="hero-overlay"></div>
+        <!-- Navbar -->
         <header class="navbar navbar-expand-lg fixed-top smart-navbar">
             <div class="container">
                 <div class="d-flex align-items-center gap-3">
@@ -63,50 +68,161 @@
                         </div>
 
                         <!-- Auth Buttons -->
+
                         <a href="#" class="btn btn-outline-light btn-sm rounded-pill px-3 mt-2 mt-lg-0">Log in</a>
                         <a href="#" class="btn btn-yellow btn-sm rounded-pill px-3 text-dark mt-2 mt-lg-0">Sign Up</a>
+
                     </div>
 
                 </div>
             </div>
         </header>
-    </section>
-
-    <div class="container  news-details">
-        <div class="content-container">
-            <img src="images/about.jpg" class="post-image" alt="Post Image" />
-
-            <h1>Who's driving romygo</h1>
-            <div class="meta">Posted on <strong>May 29</strong> · Category: <span class="theme-text">RomyGO</span>
-            </div>
-
-            <div class="content">
-                <p>
-                    What if chatbots could deliver near-human precision? In this post, we explore how RomyGO's Genie
-                    team
-                    adapted
-                    agentic retrieval-augmented generation (RAG) to build a more intelligent, responsive, and accurate
-                    AI assistant.
-                </p>
-
-                <p>
-                    We break down the system design, how we trained custom retrieval modules, and how it performs in
-                    complex use
-                    cases such as internal knowledge management and automated customer support. Our benchmarks show
-                    marked
-                    improvements in relevance, clarity, and confidence.
-                </p>
-
-                <p>
-                    Continue reading to discover how hybrid models and smart orchestration unlock more powerful chat
-                    experiences.
-                </p>
-
-                <a href="news.html" class="btn btn-theme mt-3">Back to Blog</a>
+        <!-- Optional hero content can go here -->
+        <div class="hero-content text-center invest-center">
+            <h1>Welcome to <strong class="romyGoText">romygo</strong> Investor Hub</h1>
+            <p>Join <strong class="romyGoText">romygo</strong> — invest in a reliable, scalable future of urban
+                transportation.</p>
+            <div class="drive-buttons d-flex flex-wrap align-items-center justify-content-center gap-3">
+                <a href="#" class="btn btn-drive">Learn More</a>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- Why Invest -->
+    <section class="py-5 px-3 invest-topic">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Why Invest in RomyGo?</h2>
+            <p class="section-description">
+                RomyGo is a global technology platform that connects riders with drivers, restaurants and stores with
+                delivery people, and consumers with merchants. We are a global company that is changing how people move
+                and how cities work.
+            </p>
+        </div>
 
+        <div class="container">
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-custom text-center">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="card-title">Massive Market Opportunity</div>
+                        <div class="card-text">
+                            RomyGo operates in a massive and growing market, with a total addressable market of
+                            trillions of dollars. We are a leader in the on-demand mobility and delivery space and
+                            well-positioned to capture a significant share of this market.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-custom text-center">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="card-title">Global Scale</div>
+                        <div class="card-text">
+                            RomyGo operates in thousands of cities across dozens of countries, with millions of active
+                            users. Our global platform is built for scale, driving growth and efficiency.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4 mx-md-auto">
+                    <div class="card-custom text-center">
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="card-title">Competitive Advantages</div>
+                        <div class="card-text">
+                            RomyGo stands apart with our technology, driver network, and brand. Our focus on innovation
+                            and customer satisfaction is key to building a sustainable and competitive business.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Grid Posts -->
+
+    <div class="py-4 news-container" style="border-radius: 0;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="section-title">Our Business</h2>
+                    <p class="section-description">
+                        RomyGO is a global technology platform that connects riders with drivers, restaurants and stores
+                        with delivery people, and consumers with merchants. We are a global company that is changing how
+                        people move and how cities work.
+                    </p>
+            </div>
+            <div class="row g-4">
+                <!-- Post Item -->
+                <div class="col-md-4">
+                    <a href="newsDetails.html">
+                        <div class="post-card">
+                            <img src="images/sec.jpg" alt="Post">
+                            <div class="title">Mobility</div>
+                            <small class="text-muted">
+                                Our mobility business connects riders with drivers, providing safe and reliable
+                                transportation options in cities around the world. We are committed to making mobility
+                                Our mobility business connects riders with drivers, providing safe and reliable
+                                transportation options in cities around the world. We are committed to making mobility.
+                            </small>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="newsDetails.html">
+                        <div class="post-card">
+                            <img src="images/secAnother.jpg" alt="Post">
+                            <div class="title">Delivery</div>
+                            <small class="text-muted">
+                                Our mobility business connects riders with drivers, providing safe and reliable
+                                transportation options in cities around the world. We are committed to making mobility
+                                Our mobility business connects riders with drivers, providing safe and reliable
+                                transportation options in cities around the world. We are committed to making mobility.
+                            </small>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="newsDetails.html">
+                        <div class="post-card">
+                            <img src="images/world.jpg" alt="Post">
+                            <div class="title">Freight</div>
+                            <small class="text-muted">
+                                Our mobility business connects riders with drivers, providing safe and reliable
+                                transportation options in cities around the world. We are committed to making mobility
+                                Our mobility business connects riders with drivers, providing safe and reliable
+                                transportation options in cities around the world. We are committed to making mobility.
+                            </small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <section class="py-5 px-3 invest-topic" style="margin-bottom: -48px;">
+        <div class="text-center">
+            <h2 class="section-title">Invest in RomyGo</h2>
+            <p class="section-description">
+                RomyGo is a global technology platform that connects riders with drivers, restaurants and stores with
+                delivery people, and consumers with merchants. We are a global company that is changing how people move
+                and how cities work.
+            </p>
+            <div class="mt-4 drive-buttons d-flex flex-wrap align-items-center justify-content-center gap-3">
+                <a href="#" class="btn btn-drive">Learn More</a>
+            </div>
+        </div>
+
+    </section>
     <footer class="bg-black text-white pb-4 mt-5">
         <div class="container">
             <div class="row text-start">
@@ -197,6 +313,8 @@
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         function toggleMission() {
+            const chevron = document.getElementById('chevron');
+            chevron.classList.toggle('rotate');
             const box = document.getElementById("missionText");
             box.classList.toggle("show");
         }

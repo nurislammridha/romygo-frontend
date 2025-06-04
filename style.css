@@ -888,3 +888,60 @@ a {
   border-radius: 20px;
   border: 1px solid black;
 }
+/* Why Invest in RomyGo */
+
+   .invest-topic .section-title {
+      font-weight: 700;
+    }
+
+  .invest-topic  .section-description {
+      color: #6c757d;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+   .invest-topic .card-custom {
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      background-color: #fff;
+      height: 100%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+
+   .invest-topic .card-custom:hover {
+      border-color: #fed847;
+      box-shadow: 0 8px 20px rgba(254, 216, 71, 0.25);
+      transform: translateY(-5px);
+    }
+
+   .invest-topic .card-icon {
+      font-size: 2rem;
+      color: #fed847;
+      margin-bottom: 1rem;
+    }
+
+  .invest-topic  .card-title {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+  .invest-topic  .card-text {
+      color: #6c757d;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+.invest-center{
+  margin-top: 135px !important;
+}
+    @media (max-width: 576px) {
+    .invest-topic  .card-custom {
+        padding: 1.5rem;
+      }
+
+    .invest-topic  .card-title {
+        font-size: 1.1rem;
+      }
+    }
