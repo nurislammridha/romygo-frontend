@@ -16,6 +16,10 @@ body {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Navbar Styles */
@@ -65,10 +69,12 @@ body {
 .navbar-toggler-icon {
   filter: invert(1);
 }
+.hero-element{
 
+}
 /* Hero text styling */
 .hero-text {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   font-size: 38px;
   font-weight: 700;
   line-height: 44px;
@@ -78,6 +84,8 @@ body {
 
 .romyGoText {
   font-family: 'abeatbyKai' !important;
+  letter-spacing: 4px;
+  margin-left: 4px;
 }
 @keyframes text-focus-in {
   0% {
@@ -354,6 +362,7 @@ section.py-5 {
     opacity: 0;
     transform: translateY(30px);
     animation: slideUpFade 0.8s ease-out forwards;
+    text-shadow: none !important;
   }
 
   .drive-buttons .btn:nth-child(1) {
@@ -627,6 +636,7 @@ a {
   position: relative;
   z-index: 1;
   padding: 20px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4) !important;
 }
 /* //news */
 .news-head{
@@ -874,11 +884,11 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* adjust darkness as needed */
+  background: rgba(0, 0, 0, 0.3); /* adjust darkness as needed */
   z-index: 0; /* below text, above image */
 }
 .driver-section .hero-content{
-  margin-top: 85px;
+  /* margin-top: 85px; */
 }
 .driver-section .hero-content h1,
 .driver-section .hero-content p {
@@ -934,7 +944,7 @@ a {
       line-height: 1.6;
     }
 .invest-center{
-  margin-top: 135px !important;
+  /* margin-top: 135px !important; */
 }
     @media (max-width: 576px) {
     .invest-topic  .card-custom {
