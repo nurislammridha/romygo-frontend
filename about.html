@@ -76,9 +76,9 @@
             </div>
         </header>
         <!-- Optional hero content can go here -->
-        <div class="hero-content text-center">
+        <div class="hero-content text-center" data-aos="fade-up" data-aos-delay="200">
             <h1>Welcome to <strong class="romyGoText">romygo</strong></h1>
-            <p>Drive with freedom. Ride with trust.</p>
+            <p>Drive with freedom, Ride with trust.</p>
         </div>
     </section>
 
@@ -163,24 +163,73 @@
         <div class="container">
             <div class="row align-items-center flex-column flex-md-row gap-4 gap-md-0">
                 <!-- Text Column -->
-                <div class="col-md-6 drive-text">
-                    <h2 class="drive-title fw-bold mb-3">People first</h2>
-                    <p class="drive-description text-muted mb-3">
+                <div class="col-md-6 drive-text text-center text-md-start">
+                    <h2 class="drive-title fw-bold mb-2" style="font-size: 40px;">People first</h2>
+                    <p class="drive-description text-muted mb-2">
                         At romygo, we put people first. Our drivers, riders and the families that use romygo to move
                         every day. We want to create the safest eco-system for everyone involved in romygo everyday.
                     </p>
-                    <div class="drive-buttons d-flex flex-wrap align-items-center gap-3">
-                        <a href="first.html" class="btn btn-drive">Read our community guidelines</a>
 
+                    <!-- Mission Toggle Section -->
+                    <div class="romygo-mission-box mt-3">
+                        <h4 class="mission-toggle fw-bold d-flex align-items-center justify-content-between "
+                            onclick="togglePeopleFirst()">
+                            Read our community guidelines
+                            <!-- <span id="chevron" class="chevron">&#9660;</span> -->
+                            <span id="peopleFirstChevron" class="chevron"><i class="fas fa-chevron-down"></i></span>
+                        </h4>
+
+                        <div class="mission-subtitle-box collapse mt-3" id="peopleFirst"
+                            style="background-color: #faf8c9;">
+                            <div class="mission-subtitle-content">
+                                <p>
+                                    We are romygo. Built for those who move the world forward. For the early starters,
+                                    the late-night earners,
+                                    and the everyday movers and shakers. We exist to connect people, places, and
+                                    possibilities simply,
+                                    instantly, and with purpose.
+                                </p>
+                                <p>
+                                    Movement isn’t just what we enable, it’s what defines us. It’s the engine behind
+                                    every ride, every delivery,
+                                    every choice to show up and make something happen. From small towns to big cities,
+                                    romygo empowers individuals
+                                    to take control of their time, their income, and their direction.
+                                </p>
+                                <p>
+                                    We’re a technology company grounded in reality where each tap has real-world impact.
+                                    We bring together speed,
+                                    safety, and simplicity to help people get where they need to be and earn more while
+                                    doing it. And we’re building
+                                    this not just for convenience, but for inclusion because freedom of movement and
+                                    opportunity should belong to
+                                    everyone. The opportunity to earn more, relax more and be happy more.
+                                </p>
+                                <p>
+                                    Our platform isn’t about products – it’s about people. Drivers who earn with
+                                    dignity. Riders who travel with trust.
+                                    Families who get what they need without delay. We’re here for real-life needs, in
+                                    real time, from a quick lift to
+                                    a crucial delivery.
+                                </p>
+                                <p>
+                                    We haven’t come this far by standing still. romygo was built on momentum – on asking
+                                    what’s next, what’s better,
+                                    what’s possible. That spirit of reinvention fuels everything we do. Every line of
+                                    code. Every support call. Every
+                                    new city we launch.
+                                </p>
+                                <p><strong>This is just the beginning.</strong></p>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
+
                 <!-- Image Column -->
                 <div class="col-md-6 text-center">
                     <img src="images/family-vacation.jpg" alt="Drive with romygo" class="img-fluid drive-image-second">
                 </div>
-
-
-
             </div>
         </div>
     </section>
@@ -192,19 +241,67 @@
                 <div class="col-md-6 text-center">
                     <img src="images/family-on-beach.jpg" alt="Drive with romygo" class="img-fluid drive-image">
                 </div>
-
                 <!-- Text Column -->
                 <div class="col-md-6 drive-text text-center text-md-start">
-                    <h2 class="drive-title fw-bold mb-3">
-                        We keep it safe</h2>
-                    <p class="drive-description text-muted mb-4">
+                    <h2 class="drive-title fw-bold mb-2" style="font-size: 40px;">We keep it safe</h2>
+                    <p class="drive-description text-muted mb-2">
                         romygo is building a community of drivers, riders and corporate to deliver a spectacular
                         experience for everyone in Romania.
                     </p>
-                    <div class="drive-buttons d-flex flex-wrap align-items-center gap-3">
-                        <a href="safety.html" class="btn btn-drive">Read our safety guidelines</a>
 
+                    <!-- Mission Toggle Section -->
+                    <div class="romygo-mission-box mt-3">
+                        <h4 class="mission-toggle fw-bold d-flex align-items-center justify-content-between "
+                            onclick="toggleKeepSafe()">
+                            Read our safety guidelines
+                            <!-- <span id="chevron" class="chevron">&#9660;</span> -->
+                            <span id="keepSafeChevron" class="chevron"><i class="fas fa-chevron-down"></i></span>
+                        </h4>
+
+                        <div class="mission-subtitle-box collapse mt-3" id="keepSafe">
+                            <div class="mission-subtitle-content">
+                                <p>
+                                    We are romygo. Built for those who move the world forward. For the early starters,
+                                    the late-night earners,
+                                    and the everyday movers and shakers. We exist to connect people, places, and
+                                    possibilities simply,
+                                    instantly, and with purpose.
+                                </p>
+                                <p>
+                                    Movement isn’t just what we enable, it’s what defines us. It’s the engine behind
+                                    every ride, every delivery,
+                                    every choice to show up and make something happen. From small towns to big cities,
+                                    romygo empowers individuals
+                                    to take control of their time, their income, and their direction.
+                                </p>
+                                <p>
+                                    We’re a technology company grounded in reality where each tap has real-world impact.
+                                    We bring together speed,
+                                    safety, and simplicity to help people get where they need to be and earn more while
+                                    doing it. And we’re building
+                                    this not just for convenience, but for inclusion because freedom of movement and
+                                    opportunity should belong to
+                                    everyone. The opportunity to earn more, relax more and be happy more.
+                                </p>
+                                <p>
+                                    Our platform isn’t about products – it’s about people. Drivers who earn with
+                                    dignity. Riders who travel with trust.
+                                    Families who get what they need without delay. We’re here for real-life needs, in
+                                    real time, from a quick lift to
+                                    a crucial delivery.
+                                </p>
+                                <p>
+                                    We haven’t come this far by standing still. romygo was built on momentum – on asking
+                                    what’s next, what’s better,
+                                    what’s possible. That spirit of reinvention fuels everything we do. Every line of
+                                    code. Every support call. Every
+                                    new city we launch.
+                                </p>
+                                <p><strong>This is just the beginning.</strong></p>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -213,15 +310,13 @@
         <div class="container">
             <div class="row align-items-center flex-column flex-md-row gap-4 gap-md-0">
                 <!-- Text Column -->
-                <div class="col-md-6 drive-text">
-                    <h2 class="drive-title fw-bold mb-3">Beyond rides</h2>
-                    <p class="drive-description text-muted mb-3">
+                <div class="col-md-6 drive-text text-center text-md-start">
+                    <h2 class="drive-title fw-bold mb-2" style="font-size: 40px;">Beyond rides</h2>
+                    <p class="drive-description text-muted mb-2">
                         romygo will transform your food delivery, travel and hotel bookings too. Stay connected and
                         enjoy a true revolution in life.
                     </p>
-                    <!-- <div class="drive-buttons d-flex flex-wrap align-items-center gap-3">
-                        <a href="#" class="btn btn-drive">Read our community guidelines</a>
-                    </div> -->
+
                 </div>
                 <!-- Image Column -->
                 <div class="col-md-6 text-center">
@@ -236,7 +331,7 @@
     <!-- //News section -->
     <!-- Grid Posts -->
 
-    <div class="py-4 news-container" style="border-radius: 0;">
+    <div class="py-4 news-container" style="border-radius: 0;margin-bottom: -48px;">
         <div class="container">
             <h1 class="mb-3">Company News</h1>
             <div class="row g-4">
@@ -321,12 +416,8 @@
                     <h6 class="fw-bold mb-3">Download</h6>
                     <!-- App Store & Play Store -->
                     <div class="d-flex flex-column gap-2 align-items-start">
-                        <a href="#"><img
-                                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                                alt="App Store" class="store-badge app-store"></a>
-                        <a href="#"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                                alt="Google Play" class="store-badge"></a>
+                        <a href="#"><img src="./images/appstore.png" alt="App Store" class="store-badge app-store"></a>
+                        <a href="#"><img src="./images/playstore.png" alt="Google Play" class="store-badge"></a>
                     </div>
                 </div>
             </div>
@@ -346,7 +437,7 @@
                     <a href="#"><i class="fab fa-facebook-f footer-icon"></i></a>
                     <a href="#"><i class="fab fa-instagram footer-icon"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in footer-icon"></i></a>
-                    <a href="#"><i class="fab fa-twitter footer-icon"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter footer-icon"></i></a>
                     <a href="#"><i class="fab fa-youtube footer-icon"></i></a>
                 </div>
 
@@ -371,6 +462,18 @@
             const chevron = document.getElementById('chevron');
             chevron.classList.toggle('rotate');
             const box = document.getElementById("missionText");
+            box.classList.toggle("show");
+        }
+        function togglePeopleFirst() {
+            const chevron = document.getElementById('peopleFirstChevron');
+            chevron.classList.toggle('rotate');
+            const box = document.getElementById("peopleFirst");
+            box.classList.toggle("show");
+        }
+        function toggleKeepSafe() {
+            const chevron = document.getElementById('keepSafeChevron');
+            chevron.classList.toggle('rotate');
+            const box = document.getElementById("keepSafe");
             box.classList.toggle("show");
         }
     </script>

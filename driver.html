@@ -78,9 +78,10 @@
         <!-- Optional hero content can go here -->
         <div class="hero-content text-center">
             <h1>Make more with <strong class="romyGoText">romygo</strong></h1>
-            <p>drivers make the most amount of money on every ride..</p>
+            <p>Drivers make the most amount of money on every ride.</p>
             <!-- <a href="#" class="btn btn-drive">Apply to drive</a> -->
-            <div class="drive-buttons d-flex flex-wrap align-items-center justify-content-center gap-3">
+            <div class="hero-buttons drive-buttons d-flex flex-wrap align-items-center justify-content-center gap-3"
+                data-aos="zoom-in" data-aos-delay="400">
                 <a href="#" class="btn btn-drive">Apply to drive</a>
             </div>
         </div>
@@ -96,16 +97,42 @@
 
                 <!-- Text Column -->
                 <div class="col-md-6 drive-text text-center text-md-start">
-                    <h2 class="drive-title fw-bold mb-3">
-                        You keep what you make</h2>
-                    <p class="drive-description text-muted mb-4">
+                    <h2 class="drive-title fw-bold mb-2" style="font-size: 40px;">You keep what you make</h2>
+                    <p class="drive-description text-muted mb-2">
                         romygo drivers take home 100% of what they earn. That's the only fair deal and we make it
                         happen.
                     </p>
-                    <div class="drive-buttons d-flex flex-wrap align-items-center gap-3">
-                        <a href="#" class="btn btn-drive">Read about romygo pay</a>
 
+                    <!-- Mission Toggle Section -->
+                    <div class="romygo-mission-box mt-3">
+                        <h4 class="mission-toggle fw-bold d-flex align-items-center justify-content-between"
+                            onclick="toggleRomygoPay()">
+                            Read about romygo pay
+                            <!-- <span id="chevron" class="chevron">&#9660;</span> -->
+                            <span id="romygoPayChevron" class="chevron"><i class="fas fa-chevron-down"></i></span>
+                        </h4>
+
+                        <div class="mission-subtitle-box collapse mt-3" id="romygoPay">
+                            <div class="mission-subtitle-content">
+                                <p>
+                                    RomyGo Pay is built on a simple promise. What you earn is yours. Every time you
+                                    complete a ride, you receive the full fare and every tip without the platform taking
+                                    a single percentage. There are no hidden fees, no service charges, and no
+                                    deductions. You put in the work, so you deserve every leu.
+
+                                </p>
+                                <p>
+                                    This is how ride sharing should be. Transparent, fair, and driver focused. With
+                                    RomyGo Pay, you are in control of your income from the first ride onward. Keep what
+                                    you earn, grow on your terms, and drive knowing you are backed by a platform that
+                                    respects your time.
+                                </p>
+
+                                <!-- <p><strong>This is just the beginning.</strong></p> -->
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -120,7 +147,7 @@
                     <img src="images/safety.jpg" alt="Drive with romygo" class="img-fluid dirver-image">
                 </div>
                 <!-- Text Column -->
-                <div class="drive-text mt-3">
+                <!-- <div class="drive-text mt-3">
                     <h2 class="drive-title fw-bold mb-3">We keep it safe</h2>
                     <p class="drive-description text-muted mb-3">
                         romygo is building a community of drivers, riders and corporate to deliver a spectacular
@@ -129,6 +156,69 @@
                     <div class="drive-buttons d-flex flex-wrap align-items-center gap-3">
                         <a href="safety" class="btn btn-drive">Read our safety guidelines</a>
                     </div>
+                </div> -->
+                <!-- Text Column -->
+                <div class="drive-text text-center text-md-start mt-3">
+                    <h2 class="drive-title fw-bold mb-2" style="font-size: 40px;">We keep it safe</h2>
+                    <p class="drive-description text-muted mb-2">
+                        romygo is building a community of drivers, riders and corporate to deliver a spectacular
+                        experience for everyone in Romania.
+                    </p>
+
+                    <!-- Mission Toggle Section -->
+                    <div class="romygo-mission-box mt-3">
+                        <h4 class="mission-toggle fw-bold d-flex align-items-center justify-content-between "
+                            onclick="toggleKeepSafe()">
+                            Read our safety guidelines
+                            <!-- <span id="chevron" class="chevron">&#9660;</span> -->
+                            <span id="keepSafeChevron" class="chevron"><i class="fas fa-chevron-down"></i></span>
+                        </h4>
+
+                        <div class="mission-subtitle-box collapse mt-3" id="keepSafe"
+                            style="background-color: #faf8c9;">
+                            <div class="mission-subtitle-content">
+                                <p>
+                                    We are romygo. Built for those who move the world forward. For the early starters,
+                                    the late-night earners,
+                                    and the everyday movers and shakers. We exist to connect people, places, and
+                                    possibilities simply,
+                                    instantly, and with purpose.
+                                </p>
+                                <p>
+                                    Movement isn’t just what we enable, it’s what defines us. It’s the engine behind
+                                    every ride, every delivery,
+                                    every choice to show up and make something happen. From small towns to big cities,
+                                    romygo empowers individuals
+                                    to take control of their time, their income, and their direction.
+                                </p>
+                                <p>
+                                    We’re a technology company grounded in reality where each tap has real-world impact.
+                                    We bring together speed,
+                                    safety, and simplicity to help people get where they need to be and earn more while
+                                    doing it. And we’re building
+                                    this not just for convenience, but for inclusion because freedom of movement and
+                                    opportunity should belong to
+                                    everyone. The opportunity to earn more, relax more and be happy more.
+                                </p>
+                                <p>
+                                    Our platform isn’t about products – it’s about people. Drivers who earn with
+                                    dignity. Riders who travel with trust.
+                                    Families who get what they need without delay. We’re here for real-life needs, in
+                                    real time, from a quick lift to
+                                    a crucial delivery.
+                                </p>
+                                <p>
+                                    We haven’t come this far by standing still. romygo was built on momentum – on asking
+                                    what’s next, what’s better,
+                                    what’s possible. That spirit of reinvention fuels everything we do. Every line of
+                                    code. Every support call. Every
+                                    new city we launch.
+                                </p>
+                                <p><strong>This is just the beginning.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -204,12 +294,8 @@
                     <h6 class="fw-bold mb-3">Download</h6>
                     <!-- App Store & Play Store -->
                     <div class="d-flex flex-column gap-2 align-items-start">
-                        <a href="#"><img
-                                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                                alt="App Store" class="store-badge app-store"></a>
-                        <a href="#"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                                alt="Google Play" class="store-badge"></a>
+                        <a href="#"><img src="./images/appstore.png" alt="App Store" class="store-badge app-store"></a>
+                        <a href="#"><img src="./images/playstore.png" alt="Google Play" class="store-badge"></a>
                     </div>
                 </div>
             </div>
@@ -229,7 +315,7 @@
                     <a href="#"><i class="fab fa-facebook-f footer-icon"></i></a>
                     <a href="#"><i class="fab fa-instagram footer-icon"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in footer-icon"></i></a>
-                    <a href="#"><i class="fab fa-twitter footer-icon"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter footer-icon"></i></a>
                     <a href="#"><i class="fab fa-youtube footer-icon"></i></a>
                 </div>
 
@@ -254,6 +340,29 @@
             const chevron = document.getElementById('chevron');
             chevron.classList.toggle('rotate');
             const box = document.getElementById("missionText");
+            box.classList.toggle("show");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 800,
+            easing: 'ease-in-out'
+        });
+    </script>
+    <script>
+        function toggleRomygoPay() {
+            const chevron = document.getElementById('romygoPayChevron');
+            chevron.classList.toggle('rotate');
+            const box = document.getElementById("romygoPay");
+            box.classList.toggle("show");
+        }
+        function toggleKeepSafe() {
+            const chevron = document.getElementById('keepSafeChevron');
+            chevron.classList.toggle('rotate');
+            const box = document.getElementById("keepSafe");
             box.classList.toggle("show");
         }
     </script>
