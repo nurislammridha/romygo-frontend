@@ -1,0 +1,83 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.left-half {
+  width: 50%;
+  min-height: 100vh;
+  background-color: #fefefe;
+  padding: 40px 20px;
+}
+
+.right-half {
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: url('ban.jpg') center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px 40px;
+  border-radius: 8px;
+  text-align: left;
+  color: white;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.role-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1.5px solid #ccc;
+    background-color: transparent;
+    color: #333;
+    font-weight: 500;
+    padding: 0.4rem 1.2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: fit-content;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .role-btn i {
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .role-btn.active {
+    background-color: #5e4ffe; /* Adjust to your primary color */
+    color: #fff;
+    border-color: #5e4ffe;
+  }
+
+  .role-btn.active i {
+    opacity: 1;
+  }
+
+  .role-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(94, 79, 254, 0.3);
+  }
+
+
+@media (max-width: 991px) {
+  .left-half {
+    width: 100%;
+  }
+  .right-half {
+    display: none;
+  }
+}
