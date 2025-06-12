@@ -11,6 +11,7 @@
 
     body {
       display: flex;
+      font-family: 'Instrument Sans', sans-serif;
     }
 
     .left-section, .right-section {
@@ -26,37 +27,41 @@
       overflow-y: auto;
       overflow-x: hidden;
         -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+     scrollbar-width: none;  /* Firefox */
     }
 
     .logo {
-      margin-bottom: 2rem;
+     margin-bottom: 15px;
+    align-self: flex-start;
+    margin-left: 27px;
+    margin-top: 20px;
+    height: 55px;
+    width: 320px;
     }
 
     .form-box {
       width: 100%;
-      max-width: 500px;
+      max-width: 520px;
       border: 1px solid #ddd;
       border-radius: 12px;
-      padding: 2rem;
+      /* padding: 2rem; */
     }
-
+.form-top{
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
     .form-box h2 {
-      font-size: 1.8rem;
+      font-size: 35px;
       font-weight: 700;
-      margin-bottom: 0.25rem;
+      /* margin-bottom: 0.25rem; */
     }
 
     .form-box p {
       color: #666;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0 !important;
+      /* margin-bottom: 1.5rem; */
     }
 
-    .form-box hr {
-      margin-bottom: 1.5rem;
-      border: none;
-      border-top: 1px solid #ddd;
-    }
 
     label {
       font-weight: 600;
@@ -78,7 +83,7 @@
       background-color: transparent;
       color: #333;
       font-weight: 500;
-      padding: 0.4rem 1.2rem;
+      padding: 5px 10px;
       border-radius: 10px;
       font-size: 1rem;
       width: fit-content;
@@ -86,14 +91,15 @@
     }
 
     .role-btn i {
-      opacity: 0;
+      /* opacity: 0; */
+      opacity: 1;
       transition: opacity 0.2s;
     }
 
     .role-btn.active {
-      background-color: #5e4ffe;
-      color: #fff;
-      border-color: #5e4ffe;
+      background-color: #fed847;
+      color: #000;
+      border-color: #fed847;
     }
 
     .role-btn.active i {
@@ -146,8 +152,8 @@
     .submit-btn {
       display: inline-block;
       padding: 0.6rem 1.5rem;
-      background-color: #5e4ffe;
-      color: white;
+      background-color: #fed847;
+      color: #000;
       font-weight: 600;
       border: none;
       border-radius: 10px;
@@ -184,12 +190,36 @@
     ul.password-rules li {
       margin-bottom: 0.25rem;
     }
+.powered-by img{
+  height: 48px;
+  width: 48px;
+}
+.powered-by{
+      margin-left: 25px;
+    align-self: flex-start;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
 
+}
+.small a{
+  text-decoration: none;
+  color: #333;
+  margin-right: 5px;
+}
+.small{
+  margin-left: 25px;
+}
     @media (max-width: 768px) {
       .right-section {
         display: none;
       }
       .left-section {
         width: 100%;
+      }
+      .logo,.powered-by, .small{
+        margin-left: 0px;
       }
     }

@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Become Gymscanner Vendor</title>
+    <title>Become romygo vendor</title>
+    <!-- Instrument Sans from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
@@ -14,52 +18,77 @@
     <div class="left-section">
         <img src="logo12.png" alt="Gymscanner Logo" class="logo" width="220" />
         <div class="form-box">
-            <h2>Become Gymscanner Vendor</h2>
-            <p>Enter your details below to create your account</p>
-            <hr />
-
-            <label>Role <span style="color:red">*</span></label>
-            <div class="role-buttons">
-                <button type="button" class="role-btn active" data-role="Gym">
-                    <i class="fas fa-check-circle"></i> Gym
-                </button>
-                <button type="button" class="role-btn" data-role="Personal Trainer">
-                    <i class="fas fa-check-circle"></i> Personal Trainer
-                </button>
+            <div class="form-top">
+                <h2>Become romygo vendor</h2>
+                <p>Enter your details below to create your account</p>
             </div>
 
-            <label>Name <span style="color:red">*</span></label>
-            <input type="text" placeholder="Name" />
+            <div style="padding: 2rem;">
 
-            <label>Email <span style="color:red">*</span></label>
-            <input type="email" placeholder="Email" />
+                <label>Role <span style="color:red">*</span></label>
+                <div class="role-buttons">
+                    <button type="button" class="role-btn active" data-role="Gym">
+                        <i class="fas fa-check-circle"></i> Rider
+                    </button>
+                    <button type="button" class="role-btn" data-role="Personal Trainer">
+                        <i class="fas fa-check-circle"></i> Driver
+                    </button>
+                    <button type="button" class="role-btn" data-role="Personal Trainer">
+                        <i class="fas fa-check-circle"></i> Investor
+                    </button>
+                </div>
 
-            <label>Password <span style="color:red">*</span></label>
-            <div class="password-wrapper">
-                <input type="password" placeholder="Password" />
-                <div class="password-toggle"><i class="fas fa-eye"></i></div>
+                <label>Name <span style="color:red">*</span></label>
+                <input type="text" placeholder="Name" />
+
+                <label>Email <span style="color:red">*</span></label>
+                <input type="email" placeholder="Email" />
+
+                <label>Password <span style="color:red">*</span></label>
+                <div class="password-wrapper">
+                    <input type="password" placeholder="Password" />
+                    <div class="password-toggle"><i class="fas fa-eye"></i></div>
+                </div>
+                <ul class="password-rules">
+                    <li>At least 8 characters</li>
+                    <li>At least one uppercase letter</li>
+                    <li>At least one lowercase letter</li>
+                    <li>At least one number</li>
+                    <li>At least one special character</li>
+                </ul>
+
+                <label>Confirm Password <span style="color:red">*</span></label>
+                <div class="password-wrapper">
+                    <input type="password" placeholder="Confirm Password" />
+                    <div class="password-toggle"><i class="fas fa-eye"></i></div>
+                </div>
+
+                <div class="form-footer">
+                    By clicking "Sign Up" I agree to Gymscanner's <a href="#">Terms Of Use</a> and <a href="#">Privacy
+                        Policy</a>
+                </div>
+                <button class="submit-btn">Sign Up</button>
+                <div class="form-footer">Already have an account? <a href="#">Sign In here</a></div>
             </div>
-            <ul class="password-rules">
-                <li>At least 8 characters</li>
-                <li>At least one uppercase letter</li>
-                <li>At least one lowercase letter</li>
-                <li>At least one number</li>
-                <li>At least one special character</li>
-            </ul>
-
-            <label>Confirm Password <span style="color:red">*</span></label>
-            <div class="password-wrapper">
-                <input type="password" placeholder="Confirm Password" />
-                <div class="password-toggle"><i class="fas fa-eye"></i></div>
-            </div>
-
-            <div class="form-footer">
-                By clicking "Sign Up" I agree to Gymscanner's <a href="#">Terms Of Use</a> and <a href="#">Privacy
-                    Policy</a>
-            </div>
-            <button class="submit-btn">Sign Up</button>
-            <div class="form-footer">Already have an account? <a href="#">Sign In here</a></div>
         </div>
+        <!-- Powered By -->
+        <div class="powered-by">
+            <small class="text-muted">Powered By</small>
+            <div class="d-flex align-items-center mt-1">
+                <img src="aws.png" alt="AWS" class="me-2">
+                <img src="s.png" alt="Stripe">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="small">
+            <a href="#">Home</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms And Conditions</a>
+            <a href="#">Community Guidelines</a>
+            <a href="#">Cookie Policy</a>
+            <a href="">GDPR</a>
+        </footer>
     </div>
 
     <div class="right-section">
