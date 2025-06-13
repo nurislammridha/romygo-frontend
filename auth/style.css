@@ -212,6 +212,10 @@
 .small{
   margin-left: 25px;
 }
+ .custom-check:checked {
+    background-color: #fed847;
+    border-color: #fed847;
+  }
     @media (max-width: 768px) {
       .right-section {
         display: none;
