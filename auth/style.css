@@ -36,6 +36,7 @@
     /* margin-left: 27px; */
     margin-top:0px;
     height: 55px;
+    cursor: pointer;
     /* width: 320px; */
     }
 
@@ -113,13 +114,19 @@
 
     input[type="text"], input[type="email"], input[type="password"] {
       width: 100%;
-      padding: 0.6rem 1rem;
       margin-bottom: 1.2rem;
       border: 1px solid #ccc;
       border-radius: 8px;
-      font-size: 1rem;
+      font-size: 14px;
+    padding: 6px 12px;
+    height: 36px;
     }
-
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 1px solid #4f46e5;
+  outline: none; /* optional, to remove default browser blue outline */
+}
     .password-wrapper {
       position: relative;
       display: flex;
@@ -146,24 +153,25 @@
     .form-footer {
       font-size: 0.9rem;
       color: #444;
-      margin: 1.5rem 0;
+      margin-top: 1.5rem;
     }
 
     .form-footer a {
-      color: #5e4ffe;
+      color: #4f46e5;
       text-decoration: none;
     }
 
     .submit-btn {
+      margin-top: 1.5rem;
       display: inline-block;
-      padding: 0.6rem 1.5rem;
+      padding: 8px 12px;
       background-color: #fed847;
       color: #000;
       font-weight: 600;
       border: none;
       border-radius: 10px;
       cursor: pointer;
-      font-size: 1rem;
+      font-size:14px;
     }
 
     .right-section {
@@ -176,6 +184,9 @@
     }
   .right-login {
       background: url('login.jpg') center center / cover no-repeat !important;
+    }
+  .right-forgot {
+      background: url('passwordReset.jpg') center center / cover no-repeat !important;
     }
     .right-banner-text {
       background-color: rgba(0, 0, 0, 0.7);
@@ -219,6 +230,16 @@ font-size: 14px;
 .small{
   /* margin-left: 25px; */
 }
+.forgot-password a{
+  font-size: 14px;
+  text-decoration: none;
+  color: #4f46e5;
+}
+.forgot-password{
+display: flex;
+justify-content: space-between;
+/* align-items: center; */
+}
  .custom-check:checked {
     background-color: #fed847;
     border-color: #fed847;
@@ -227,8 +248,18 @@ font-size: 14px;
       .right-section {
         display: none;
       }
+      .form-box h2{
+font-size: 24px;
+    }
+    .form-top {
+    padding: 16px;
+}
+    .form-bottom {
+    padding: 16px;
+}
       .left-section {
         width: 100%;
+        padding: 16px;
       }
       .logo,.powered-by, .small{
         margin-left: 0px;
