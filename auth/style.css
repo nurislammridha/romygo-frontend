@@ -22,8 +22,8 @@
     .left-section {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      padding: 2rem;
+      /* align-items: center; */
+      padding: 3rem;
       overflow-y: auto;
       overflow-x: hidden;
         -ms-overflow-style: none;  /* IE and Edge */
@@ -31,32 +31,36 @@
     }
 
     .logo {
-     margin-bottom: 15px;
+     margin-bottom: 10px;
     align-self: flex-start;
-    margin-left: 27px;
-    margin-top: 20px;
+    /* margin-left: 27px; */
+    margin-top:0px;
     height: 55px;
-    width: 320px;
+    /* width: 320px; */
     }
 
     .form-box {
       width: 100%;
-      max-width: 520px;
+      /* max-width: 520px; */
       border: 1px solid #ddd;
       border-radius: 12px;
       /* padding: 2rem; */
     }
 .form-top{
-  padding: 20px;
+  padding: 16px 24px;
   border-bottom: 1px solid #ddd;
 }
-    .form-box h2 {
-      font-size: 35px;
-      font-weight: 700;
+.form-bottom{
+  padding:24px;
+}
+.form-box h2 {
+  font-size: 32px;
+  font-weight: 700;
       /* margin-bottom: 0.25rem; */
-    }
+}
 
     .form-box p {
+      font-size: 14px;
       color: #666;
       margin-bottom: 0 !important;
       /* margin-bottom: 1.5rem; */
@@ -64,6 +68,7 @@
 
 
     label {
+      font-size: 14px;
       font-weight: 600;
       display: block;
       margin-bottom: 0.5rem;
@@ -169,7 +174,9 @@
       color: white;
       height: 100vh;
     }
-
+  .right-login {
+      background: url('login.jpg') center center / cover no-repeat !important;
+    }
     .right-banner-text {
       background-color: rgba(0, 0, 0, 0.7);
       padding: 2rem;
@@ -195,14 +202,14 @@
   width: 48px;
 }
 .powered-by{
-      margin-left: 25px;
+      /* margin-left: 25px; */
     align-self: flex-start;
-    margin-top: 30px;
+    margin-top: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 10px;
+    padding: 8px;
     margin-bottom: 20px;
-
+font-size: 14px;
 }
 .small a{
   text-decoration: none;
@@ -210,7 +217,7 @@
   margin-right: 5px;
 }
 .small{
-  margin-left: 25px;
+  /* margin-left: 25px; */
 }
  .custom-check:checked {
     background-color: #fed847;
