@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Romygo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- <link href="https://fonts.cdnfonts.com/css/a-beat-by-kai" rel="stylesheet"> -->
+    <link href="https://fonts.cdnfonts.com/css/abeatbykai" rel="stylesheet">
+    <!-- Instrument Sans from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Font Awesome CDN (working latest version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section about-hero driver-section">
+        <!-- Responsive image background -->
+        <img src="images/deliveryPage.jpg" alt="About Background" class="hero-bg-img">
+        <!-- Overlay layer -->
+        <div class="hero-overlay"></div>
+        <!-- Navbar -->
+        <header class="navbar navbar-expand-lg fixed-top smart-navbar">
+            <div class="container">
+                <div class="d-flex align-items-center gap-3">
+                    <a class="navbar-brand d-flex align-items-center gap-2 text-white" href="index.html">
+                        <img src="images/logo.png" alt="Romygo Logo" height="28">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navMenu">
+                    <ul class="navbar-nav mx-auto gap-lg-4 gap-2 text-center">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About romygo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="driver.html">Become Driver</a></li>
+                        <li class="nav-item"><a class="nav-link" href="investor.html">Investor</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    </ul>
+                    <div class="d-flex flex-column flex-lg-row align-items-center gap-2 gap-lg-3">
+                        <!-- Language Switcher -->
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1 lang-switcher"
+                                type="button" data-bs-toggle="dropdown">
+                                <span class="lang-icon">
+                                    <svg class="lang-svg" fill="none" stroke-width="1.5" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
+                                    </svg>
+                                </span>
+                                EN
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">EN - English</a></li>
+                                <li><a class="dropdown-item" href="#">RO - Romanian</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Auth Buttons -->
+
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-pill px-3 mt-2 mt-lg-0">Log in</a>
+                        <a href="#" class="btn btn-yellow btn-sm rounded-pill px-3 text-dark mt-2 mt-lg-0">Sign Up</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- Optional hero content can go here -->
+        <div class="hero-content text-center invest-center">
+            <h1>Deliver with <strong class="romyGoText">romygo</strong></h1>
+            <p>Food Delivery Coming Soon</p>
+
+        </div>
+    </section>
+
+    <footer class="bg-black text-white pb-4 mt-5" style="margin-top:0px !important;">
+        <div class="container">
+            <div class="row text-start">
+                <!-- Company -->
+                <div class="col-6 col-md-3 mb-4">
+                    <h6 class="fw-bold mb-3">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">About us</a></li>
+                        <li><a href="#" class="footer-link">Investors</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Career</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="col-6 col-md-3 mb-4">
+                    <h6 class="fw-bold mb-3">Products</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Ride</a></li>
+                        <li><a href="#" class="footer-link">Drive</a></li>
+                        <li><a href="#" class="footer-link">Deliver</a></li>
+                        <li><a href="#" class="footer-link">Hotels</a></li>
+                        <li><a href="#" class="footer-link">Travel</a></li>
+                    </ul>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-6 col-md-3 mb-4">
+                    <h6 class="fw-bold mb-3">Useful Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms and Conditions</a></li>
+                        <li><a href="#" class="footer-link">Community Guidelines</a></li>
+                        <li><a href="#" class="footer-link">GDPR</a></li>
+                        <li><a href="#" class="footer-link">Safety Guidelines</a></li>
+                    </ul>
+                </div>
+
+                <!-- Download -->
+                <div class="col-6 col-md-3 mb-4">
+                    <h6 class="fw-bold mb-3">Download</h6>
+                    <!-- App Store & Play Store -->
+                    <div class="d-flex flex-column gap-2 align-items-start">
+                        <a href="#"><img src="./images/appstore.png" alt="App Store" class="store-badge app-store"></a>
+                        <a href="#"><img src="./images/playstore.png" alt="Google Play" class="store-badge"></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary">
+
+            <!-- Footer Bottom -->
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-3">
+                <p class="mb-0">&copy; 2025 romygo. All Rights Reserved.</p>
+
+                <!-- Logo -->
+                <img src="images/logo.png" alt="romygo logo" height="40" style="width: 120px; object-fit: contain;">
+
+                <!-- Social Icons -->
+                <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                    <a href="#"><i class="fab fa-facebook-f footer-icon"></i></a>
+                    <a href="#"><i class="fab fa-instagram footer-icon"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in footer-icon"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter footer-icon"></i></a>
+                    <a href="#"><i class="fab fa-youtube footer-icon"></i></a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        function toggleMission() {
+            const chevron = document.getElementById('chevron');
+            chevron.classList.toggle('rotate');
+            const box = document.getElementById("missionText");
+            box.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>
